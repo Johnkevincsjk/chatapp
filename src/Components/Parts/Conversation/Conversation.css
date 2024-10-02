@@ -1,0 +1,29 @@
+.conversation_main {
+    border-bottom: 0.4px solid rgba(255, 240, 240, 0.515);
+    padding: 10px;
+}
+
+.conversation_main1 {
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+
+}
+
+.msg_time {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.conversation_sec2 {
+    text-align: start;
+    margin-left: 20px;
+
+    p {
+        margin: 0;
+    }
+}
