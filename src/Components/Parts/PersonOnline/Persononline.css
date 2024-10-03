@@ -1,0 +1,12 @@
+.onlineuser_header {
+    background-color: #151414;
+    padding: 0 10px;
+    border-radius: 7px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+
+.onlineuser_user {
+    height: 75dvh;
+    overflow: scroll;
+    scrollbar-width: none;
+}

@@ -28,19 +28,19 @@ export default function Workspace() {
             </div>
             <div className="workspace_body">
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
                 <MyMsg />
-                <Otherschat/>
+                <Otherschat />
             </div>
             <div className="workspace_textarea">
                 <IconButton style={{ color: '#01aafe' }}>

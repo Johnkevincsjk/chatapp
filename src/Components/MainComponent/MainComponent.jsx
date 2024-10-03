@@ -11,6 +11,7 @@ import Conversation from '../Parts/Conversation/Conversation';
 import Workspace from '../Parts/Workspace/Workspace';
 import WelcomePage from '../Parts/WelcomePage/WelcomePage';
 import Creategroups from '../Parts/Creategroups/Creategroups';
+import PersonOnline from '../Parts/PersonOnline/PersonOnline';
 
 export default function MainComponent() {
     return (
@@ -52,9 +53,10 @@ export default function MainComponent() {
                 </div>
 
                 <div className="col-md-8 p-1 chats bg-dark">
-                    <Workspace />
+                    {/* <Workspace /> */}
                     {/* <WelcomePage /> */}
                     {/* <Creategroups /> */}
+                    <PersonOnline />
                 </div>
             </div>
         </div>
