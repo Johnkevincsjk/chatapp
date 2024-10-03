@@ -1,0 +1,27 @@
+.creategroups_main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.creategroups_input {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.creategroups_input:focus-within {
+    box-shadow: 0 0 0px 3px #0984ff;
+}
+
+.creategroup_input2 {
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    width: 90%;
+}

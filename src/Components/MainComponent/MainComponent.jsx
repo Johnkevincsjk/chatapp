@@ -9,6 +9,8 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import SearchIcon from '@mui/icons-material/Search';
 import Conversation from '../Parts/Conversation/Conversation';
 import Workspace from '../Parts/Workspace/Workspace';
+import WelcomePage from '../Parts/WelcomePage/WelcomePage';
+import Creategroups from '../Parts/Creategroups/Creategroups';
 
 export default function MainComponent() {
     return (
@@ -51,7 +53,8 @@ export default function MainComponent() {
 
                 <div className="col-md-8 p-1 chats bg-dark">
                     <Workspace />
-
+                    {/* <WelcomePage /> */}
+                    {/* <Creategroups /> */}
                 </div>
             </div>
         </div>

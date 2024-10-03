@@ -21,6 +21,7 @@
     display: flex;
     border-radius: 7px;
     background-color: #151414;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 }
 
 .ci-icons_sec1 {
@@ -37,6 +38,7 @@
     padding: 5px;
     border-radius: 7px;
     transition: 0.2s;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 
     input {
         border: none;
@@ -62,6 +64,7 @@
     background-color: #151414;
     min-height: 100%;
     border-radius: 7px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
 
 }
 

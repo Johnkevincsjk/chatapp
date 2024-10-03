@@ -1,0 +1,12 @@
+.welcomepage_main {
+    height: 100%;
+    place-content: center;
+
+    h1 {
+        color: rgba(255, 255, 255, 0.355);
+    }
+
+    p {
+        color: #ffffff5b;
+    }
+}
