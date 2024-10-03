@@ -1,0 +1,34 @@
+.Login_container {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Login_main {
+    border-radius: 30px;
+    min-height: 70%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    box-shadow: rgba(17, 160, 255, 0.455) 0px 1px 1px 0px inset, rgba(26, 93, 126, 0.953) 0px 50px 100px -20px, rgb(179, 8, 237) 0px 30px 60px -30px;
+
+}
+
+.login_form {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.textfeild_width {
+    color: white;
+    width: 60%;
+}
