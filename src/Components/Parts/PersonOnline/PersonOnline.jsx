@@ -19,20 +19,20 @@ export default function PersonOnline() {
                     <input type="text" className='seach_input' placeholder='Search online users' />
                 </div>
                 <div className="onlineuser_user">
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
-                    <DisplayUserMsg Username="Test User"/>
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
+                    <DisplayUserMsg Username="Test User" />
                 </div>
 
             </div>

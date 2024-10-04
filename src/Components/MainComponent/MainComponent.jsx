@@ -1,41 +1,41 @@
 import React from 'react'
 import '../MainComponent/MainComponent.css'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { colors, IconButton } from '@mui/material';
-import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
+import { IconButton } from '@mui/material';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import SearchIcon from '@mui/icons-material/Search';
 import Conversation from '../Parts/Conversation/Conversation';
-import Workspace from '../Parts/Workspace/Workspace';
-import WelcomePage from '../Parts/WelcomePage/WelcomePage';
-import Creategroups from '../Parts/Creategroups/Creategroups';
-import PersonOnline from '../Parts/PersonOnline/PersonOnline';
+import { Outlet, useNavigate } from 'react-router-dom';
+import OnlinePredictionIcon from '@mui/icons-material/OnlinePrediction';
+import Groups2Icon from '@mui/icons-material/Groups2';
+
 
 export default function MainComponent() {
+
+    const navi = useNavigate()
     return (
         <div className='container  main_box'>
             <div className="row main_box_row rounded">
                 <div className="col-md-4 p-1  chats_list bg-dark">
                     <div className="ci-icons">
                         <div className="ci-icons_sec1">
-                            <IconButton>
+                            <IconButton onClick={() => navi('')}>
                                 <AccountCircleIcon sx={{ color: "white", padding: "0", fontSize: "larger" }} />
                             </IconButton>
                         </div>
                         <div className="ci-icons_sec2">
-                            <IconButton>
-                                <AddAPhotoIcon sx={{ color: "white" }} />
+                            <IconButton onClick={() => navi("persononline")}>
+                                <OnlinePredictionIcon sx={{ color: "white" }} />
                             </IconButton>
                             <IconButton>
                                 <AddCircleOutlineIcon sx={{ color: "white" }} />
                             </IconButton>
-                            <IconButton>
+                            <IconButton onClick={() => navi('creategroups')}>
                                 <GroupAddIcon sx={{ color: "white" }} />
                             </IconButton>
                             <IconButton>
-                                <PersonAddIcon sx={{ color: "white" }} />
+                                <Groups2Icon sx={{ color: "white" }} />
                             </IconButton>
                         </div>
 
@@ -53,10 +53,7 @@ export default function MainComponent() {
                 </div>
 
                 <div className="col-md-8 p-1 chats bg-dark">
-                    {/* <Workspace /> */}
-                    {/* <WelcomePage /> */}
-                    {/* <Creategroups /> */}
-                    <PersonOnline />
+                    <Outlet />
                 </div>
             </div>
         </div>
