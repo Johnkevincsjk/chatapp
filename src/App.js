@@ -8,6 +8,7 @@ import WelcomePage from './Components/Parts/WelcomePage/WelcomePage';
 import Workspace from './Components/Parts/Workspace/Workspace';
 import Creategroups from './Components/Parts/Creategroups/Creategroups';
 import PersonOnline from './Components/Parts/PersonOnline/PersonOnline';
+import AvailableGroups from './Components/Parts/AvailableGroups/AvailableGroups';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='workspace' element={<Workspace />} />
           <Route path='creategroups' element={<Creategroups />} />
           <Route path='persononline' element={<PersonOnline />} />
+          <Route path='availablegroups' element={<AvailableGroups />} />
         </Route>
 
       </Routes>

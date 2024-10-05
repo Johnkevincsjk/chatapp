@@ -11,7 +11,7 @@ export default function Otherschat() {
         <div className='othersMsg_main'>
             <div className="othersMsg_main2">
                 <div className="othersMsg_bubble">
-                    <h1>{bubbleName}</h1>
+                    <h4>{bubbleName}</h4>
                 </div>
                 <div className="othersMsg_content">
                     <p>{others_msg.Message}</p>

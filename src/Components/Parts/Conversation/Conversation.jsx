@@ -9,7 +9,7 @@ export default function Conversation() {
         <div className='conversation_main' onClick={() => navi('workspace')}>
             <div className="conversation_main1">
                 <div className="conversation_sec1">
-                    <FaceIcon fontSize="large" />
+                    <FaceIcon className='icons' />
                 </div>
                 <div className="conversation_sec2">
                     <p>John Kevin</p>

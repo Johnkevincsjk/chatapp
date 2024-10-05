@@ -1,53 +1,61 @@
-import React from 'react'
-import '../MainComponent/MainComponent.css'
+
+import '../MainComponent/MainComponent.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { IconButton } from '@mui/material';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import SearchIcon from '@mui/icons-material/Search';
 import Conversation from '../Parts/Conversation/Conversation';
 import { Outlet, useNavigate } from 'react-router-dom';
 import OnlinePredictionIcon from '@mui/icons-material/OnlinePrediction';
 import Groups2Icon from '@mui/icons-material/Groups2';
-
+import LoginIcon from '@mui/icons-material/Login';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleTheme } from '../../Redux/themeSlice'; // Correct the action name
 
 export default function MainComponent() {
+    const dispatch = useDispatch();
+    const navi = useNavigate();
+    const lightTheme = useSelector((state) => state.themeKey); // Assuming themeKey is for the theme
 
-    const navi = useNavigate()
     return (
-        <div className='container  main_box'>
+        <div className="container  main_box">
             <div className="row main_box_row rounded">
-                <div className="col-md-4 p-1  chats_list bg-dark">
-                    <div className="ci-icons">
+                <div className="col-md-4 p-1 chats_list bg-dark">
+                    <div className={!lightTheme ? "ci-icons" : "ci-icons light_theme"}>
                         <div className="ci-icons_sec1">
                             <IconButton onClick={() => navi('')}>
-                                <AccountCircleIcon sx={{ color: "white", padding: "0", fontSize: "larger" }} />
+                                <AccountCircleIcon className='icons' sx={{ color: "white", padding: "0" }} />
                             </IconButton>
                         </div>
                         <div className="ci-icons_sec2">
                             <IconButton onClick={() => navi("persononline")}>
-                                <OnlinePredictionIcon sx={{ color: "white" }} />
-                            </IconButton>
-                            <IconButton>
-                                <AddCircleOutlineIcon sx={{ color: "white" }} />
+                                <OnlinePredictionIcon className='icons' sx={{ color: "white" }} />
                             </IconButton>
                             <IconButton onClick={() => navi('creategroups')}>
-                                <GroupAddIcon sx={{ color: "white" }} />
+                                <GroupAddIcon className='icons' sx={{ color: "white" }} />
                             </IconButton>
-                            <IconButton>
-                                <Groups2Icon sx={{ color: "white" }} />
+                            <IconButton onClick={() => navi('availablegroups')}>
+                                <Groups2Icon className='icons' sx={{ color: "white" }} />
+                            </IconButton>
+                            <IconButton onClick={() => dispatch(toggleTheme())}>
+                                {lightTheme ? <DarkModeIcon className='icons' sx={{ color: "white" }} /> : <LightModeIcon sx={{ color: "white" }} />}
+                            </IconButton>
+                            <IconButton onClick={() => navi('/')}>
+                                <LoginIcon className='icons' sx={{ color: "white" }} />
                             </IconButton>
                         </div>
-
                     </div>
-                    <div className="ci-searchBar my-2">
+
+                    <div className={!lightTheme ? "ci-searchBar my-2" : "ci-searchBar my-2 light_theme"}>
                         <IconButton>
-                            <SearchIcon sx={{ color: "white" }} />
+                            <SearchIcon className='icons' sx={{ color: "white" }} />
                         </IconButton>
-                        <input type="text" className='seach_input' placeholder='Search' />
+                        <input type="text" className={!lightTheme ? "seach_input" : "seach_input light_theme"} placeholder='Search' />
                     </div>
 
-                    <div className="ci-convo my-2">
+                    <div className='ci-convo my-2'>
                         <Conversation />
                     </div>
                 </div>
@@ -57,5 +65,5 @@ export default function MainComponent() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

@@ -7,7 +7,7 @@ export default function DisplayUserMsg(props) {
         <div className='conversation_main'>
             <div className="conversation_main1">
                 <div className="conversation_sec1">
-                    <FaceIcon fontSize="large" />
+                    <FaceIcon className='icons' fontSize="large" />
                 </div>
                 <div className="conversation_sec2">
                     <p>{props.Username}</p>

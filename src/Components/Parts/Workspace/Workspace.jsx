@@ -14,7 +14,7 @@ export default function Workspace() {
             <div className="workspace_header">
                 <div className="workspace_wrapper">
                     <div className="chatprofile">
-                        <AccountCircleIcon fontSize='large' />
+                        <AccountCircleIcon className='icons' />
                     </div>
                     <div className="profileName">
                         <h5>My Friend</h5>
@@ -22,7 +22,7 @@ export default function Workspace() {
                     </div>
                 </div>
                 <IconButton style={{ color: "white" }}>
-                    <DeleteIcon />
+                    <DeleteIcon className='icons' />
 
                 </IconButton>
             </div>
