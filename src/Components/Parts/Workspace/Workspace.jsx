@@ -7,11 +7,14 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from '@mui/material';
 import MyMsg from '../MyMsg/MyMsg';
 import Otherschat from '../Otherschat/Otherschat';
+import { useSelector } from 'react-redux';
 
 export default function Workspace() {
+
+    const lighttheme = useSelector((state) => state.themeKey)
     return (
         <div className='workspace_main'>
-            <div className="workspace_header">
+            <div className={!lighttheme ? "workspace_header" : 'workspace_header light_theme'}>
                 <div className="workspace_wrapper">
                     <div className="chatprofile">
                         <AccountCircleIcon className='icons' />
@@ -26,7 +29,7 @@ export default function Workspace() {
 
                 </IconButton>
             </div>
-            <div className="workspace_body">
+            <div className={!lighttheme ? "workspace_body" : 'workspace_body light_theme'}>
                 <MyMsg />
                 <Otherschat />
                 <MyMsg />

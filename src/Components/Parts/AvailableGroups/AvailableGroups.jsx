@@ -3,17 +3,20 @@ import '../AvailableGroups/AvailableGroups.css'
 import { IconButton } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
 import DisplayUserMsg from '../DisplayUserMsg/DisplayUserMsg'
+import { useSelector } from 'react-redux';
 
 export default function AvailableGroups() {
+    const lighttheme = useSelector((state) => state.themeKey)
+
     return (
         <div className='onlineuser_main'>
             <div className="onlineuser_main2">
-                <div className="onlineuser_header">
+                <div className={!lighttheme? "onlineuser_header":'onlineuser_header light_theme'}>
                     <h3>Available Groups</h3>
                 </div>
-                <div className="ci-searchBar my-2">
+                <div className={!lighttheme? "ci-searchBar my-2":'ci-searchBar my-2 light_theme'}>
                     <IconButton>
-                        <SearchIcon sx={{ color: "white" }} />
+                        <SearchIcon className='available_groupSearch' sx={{ color: "white" }} />
                     </IconButton>
                     <input type="text" className='seach_input' placeholder='Search Groups' />
                 </div>

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 export default function Login() {
     return (
-        <div className='container Login_container'>
+        <div className='container-fluid Login_container'>
             <div className="Login_main bg-dark">
                 <h3>Login to your account</h3>
                 <form action="" className='login_form'>

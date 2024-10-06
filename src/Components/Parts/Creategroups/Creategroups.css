@@ -1,5 +1,5 @@
 .creategroups_main {
-    height: 100%;
+    height: 95dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -24,4 +24,20 @@
     outline: none;
     background-color: aliceblue;
     width: 90%;
+}
+
+.dark_input {
+    background-color: black;
+    color: white;
+
+    .creategroup_input2 {
+        background-color: black;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .creategroups_input {
+        display: flex;
+    }
 }

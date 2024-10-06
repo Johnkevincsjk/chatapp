@@ -9,8 +9,10 @@ import Workspace from './Components/Parts/Workspace/Workspace';
 import Creategroups from './Components/Parts/Creategroups/Creategroups';
 import PersonOnline from './Components/Parts/PersonOnline/PersonOnline';
 import AvailableGroups from './Components/Parts/AvailableGroups/AvailableGroups';
+import Conversation from './Components/Parts/Conversation/Conversation';
 
 function App() {
+
   return (
     <div className="App">
 
@@ -22,6 +24,7 @@ function App() {
           <Route path='creategroups' element={<Creategroups />} />
           <Route path='persononline' element={<PersonOnline />} />
           <Route path='availablegroups' element={<AvailableGroups />} />
+          <Route path='conversation' element={<Conversation />} />
         </Route>
 
       </Routes>
