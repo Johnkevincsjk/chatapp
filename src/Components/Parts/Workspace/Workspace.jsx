@@ -44,12 +44,26 @@ export default function Workspace() {
                 <Otherschat />
                 <MyMsg />
                 <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
+                <MyMsg />
+                <Otherschat />
             </div>
-            <div className="workspace_textarea">
+            <div className={!lighttheme ? "workspace_textarea" : 'workspace_textarea light_theme'}>
                 <IconButton style={{ color: '#01aafe' }}>
                     <AddIcon />
                 </IconButton>
-                <textarea name="" id="type_chat" cols={88} rows={1}></textarea>
+                <textarea name="" id="type_chat" className={!lighttheme ? "bg-dark" : "bg-white"} cols={88} rows={1}></textarea>
                 <IconButton style={{ color: '#01aafe' }}>
                     <SendIcon />
                 </IconButton>
